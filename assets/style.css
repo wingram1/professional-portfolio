@@ -31,6 +31,7 @@ header h1 {
     display: flex;
     flex-direction: row;
     justify-content: end;
+    align-items: center;
     width: 100%;
 }
 
@@ -80,9 +81,12 @@ img {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 25px;
     background-color: rgba(0, 0, 0, .25);
     padding: 20px 20px 35px 30px;
+    justify-content: center;
 }
 
 section h2{
@@ -93,14 +97,66 @@ section h2{
 section h3 {
     border-bottom: 2px aliceblue solid;
     width: 35%;
+    margin-top: 25px;
 }
 section h4 {
-    border-bottom: 2px aliceblue solid;
+    border-bottom: 1px aliceblue solid;
     width: fit-content;
+}
+
+.screenshot-container {
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .screenshot {
     width: 100%;
+    max-width: 70vw;
     height: auto;
     margin: 20px 0 20px 0;
+}
+
+#contact-me {
+    margin-bottom: 0;
+}
+
+.email {
+    color: lightblue;
+    margin-top: 100px;
+}
+
+.secondary-div {
+    width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .sub-section {
+        flex-direction: column-reverse !important;
+        width: 100% !important;
+    }
+
+    img {
+        margin: auto !important;
+    }
+
+    a {
+        width: fit-content !important;
+        margin: auto !important;
+    }
+
+    .secondary-div {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important
+    }
+
+    .contact-subsection {
+        flex-direction: column !important;
+        margin-left: 10px;
+        justify-content: start !important;
+    }
+
+    .contact-subsection p {
+        margin-left: 0;
+    }
 }

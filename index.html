@@ -14,8 +14,10 @@
         <h1>William Ingram</h1>
         <div class="contact">
             <h5>Contact:</h5>
-            <a href="mailto: waingram96@gmail.com">waingram96@gmail.com</a>
-            <p>+1 (901) 573-6120</p>
+            <div class="d-flex flex-row contact-subsection">
+                <a href="mailto: waingram96@gmail.com">waingram96@gmail.com</a>
+                <p>+1 (901) 573-6120</p>
+            </div>
         </div>
     </header>
     <div id="links">
@@ -25,7 +27,7 @@
     </div>
     <main>
         <section id="about-me" class="d-flex flex-column">
-            <div class="d-flex flex-row">
+            <div class="d-flex flex-row sub-section">
                 <div class="d-flex flex-column">
                     <h2>About Me</h2>
                     <p>Currently enrolled in the Vanderbilt Full-Stack Coding Bootcamp, I am an aspiring web developer. At the ripe young age of 25, I've had experience in various job markets including the industries of music, education, trucking, and supply chain.</p>
@@ -36,7 +38,7 @@
                         <li><strong>Running:</strong> I ran a half-marathon in November 2020. I have a dream of one day running a marathon, but I can't seem to stay un-injured!</li>
                     </ul>
                 </div>
-                <div class="pt-2">
+                <div class="pt-2 secondary-div">
                     <img src="./assets/images/me.jpg" style="width: 300px; height: 300px;">
                 </div>
             </div>
@@ -53,12 +55,12 @@
         </section>
         <section id="my-work">
             <h2>My Work</h2>
-            <a href="https://wingram1.github.io/drip-planner/">
+            <a class="screenshot-container" href="https://wingram1.github.io/drip-planner/">
                 <img src="./assets/images/drip-planner-main.png" class="screenshot" alt="picture of drip planner application">
             </a>
             <h3>Drip Planner</h3>
-            <div class="d-flex flex-row">
-                <div class="d-flex flex-column w-50">
+            <div class="d-flex flex-row w-100 sub-section">
+                <div class="d-flex flex-column w-50 secondary-div">
                     <p>Completed and submitted as my first group project for the Vanderbilt Coding Bootcamp, Drip Planner is a weather application that doubles as a travel application. Made for truck drivers, Drip Planner can grab specific forecasts from the National Weather Service (NWS) API, which the user can then organize into a custom trip.</p>
                     <h4>Technologies Used:</h4>
                     <ul>
@@ -71,7 +73,7 @@
                     <h4>How To Use:</h4>
                     <p>After creating a trip, the user can input a city/state or click the interactive map to generate a forecast for that area. The user can then view additional details of each forecast time-slot and/or add one to the selected trip. When the "Save" button is clicked, the trip will save to the device's local storage and return to the list of user-created trips.</p>
                 </div>
-                <div class="d-flex flex-column w-50">
+                <div class="d-flex flex-column w-50 secondary-div">
                     <a href="https://wingram1.github.io/drip-planner/">
                     <img src="./assets/images/drip-planner-forecast.png" class="screenshot">
                     </a>
@@ -80,9 +82,23 @@
                     </a>
                 </div>
             </div>
+            <h3>Coding Quiz</h3>
+            <div class="d-flex flex-row w-100 sub-section">
+                <div class="d-flex flex-column w-50 secondary-div">
+                    <p>Completed for the Vanderbilt Coding Bootcamp, my aptly-named Coding Quiz is a simple-yet-effective basic coding exercise. Once started, a timer will start in the top-right corner. As the user clicks on the provided answer choices for each question, they will see whether they got it wrong or right.</p>
+                    <p>When the quiz has finished either via user completion or time depletion, the user can input his/her score to be uploaded to the high scores. The high scores are stored in the device's local storage, and are ranked from highest-to-lowest with only the top 10 displayed.</p>
+                </div>
+                <div class="d-flex flex-row w-50 secondary-div">
+                    <a href="https://wingram1.github.io/coding-quiz/">
+                        <img class="screenshot" src="./assets/images/coding-quiz.png">
+                    </a>
+                </div>
+            </div>
         </section>
         <section id="contact-me">
             <h2>Contact Me</h2>
+            <p>Email: <a href="mailto: waingram96@gmail.com"><u>waingram96@gmail.com</u></a></p>
+            <p>Phone: +1 (901) 573-6120</p>
         </section>
     </main>
     </div>
