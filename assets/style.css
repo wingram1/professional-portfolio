@@ -56,9 +56,8 @@ header h1 {
 main {
     display: flex;
     flex-direction: column;
-    height: 79vh;
+    height: fit-content;
     width: 100%;
-    padding: 20px 20px 35px 30px;
 }
 
 footer {
@@ -74,4 +73,34 @@ footer {
 
 footer a {
     font-size: 24px;
+}
+
+img {
+    border: 2px solid aliceblue;
+}
+
+section {
+    margin-bottom: 25px;
+    background-color: rgba(0, 0, 0, .25);
+    padding: 20px 20px 35px 30px;
+}
+
+section h2{
+    border-bottom: 2px aliceblue solid;
+    width: 95%;
+}
+
+section h3 {
+    border-bottom: 2px aliceblue solid;
+    width: 35%;
+}
+section h4 {
+    border-bottom: 2px aliceblue solid;
+    width: fit-content;
+}
+
+.screenshot {
+    width: 100%;
+    height: auto;
+    margin: 20px 0 20px 0;
 }
